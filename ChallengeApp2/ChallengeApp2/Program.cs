@@ -1,68 +1,37 @@
-﻿var number1 = 50;
-var number2 = 10;
+﻿/*
+ * Napisz w Program.cs kod, w którym:
+ * - zdeklarujesz zmienną z imieniem
+ * - zdeklarujesz zmienną z płcią (dobierz odpowiednią)
+ * - zdeklarujesz z mienną z wiekiem
+ *  
+ * A następnie napisz kilka instrukcji warunkowych,
+ * które przeanalizują te dane w następujący sposób:
+ *  
+ * (1): jeśli mamy do czynienia z kobietą i ma ona poniżej 30 lat, to zwróć komunikat:
+ *      "Kobieta poniżej 30 lat"
+ * (2): jesli mamy do czynienia z osobą o imiemiu Ewa i ma ona równo 30 lat, to zwróć komunikat:
+ *      "Ewa, lat 30"
+ * (3): jeśli mamy do czynienia z mężczyzną i ma poniżej 18 lat zwróć komunikat:
+ *      "Niepenołetni mężczyzna"
+ * (4): jeśli dane nie spełniają żadnego z wzarunków program nie zwraca nic
+ *  
+ * UWAGA:
+ * Twój program zawsze powinien zwracać TYLKO JEDEN KOMUNIKAT lub w przypadku (4) nic!
+ */
 
-// operatory relacyjne
-// == != > < <= >=
+string name = "Ewa";
+bool male = false;
+int age = 30;
 
-if (number1 < number2)
+if (male == false && age < 30)
 {
-    Console.WriteLine("JESTEM TUTAJ W LINI 6");
+    Console.WriteLine("Kobieta, poniżej 30 lat");
 }
-else
+else if(name == "Ewa" && age == 30)
 {
-    Console.WriteLine("JESTEM W LINI 10");
+    Console.WriteLine("Ewa, lat 30");
 }
-
-
-var name = "Adam";
-var age = 33;
-
-// operatory logiczne
-// &&, ||, !
-
-if (name == "Adam" &&  age < 50)
+else if (male == true && age < 18)
 {
-    Console.WriteLine("JESTEM ADAMEM PRZED 50");
-} else
-{
-    Console.WriteLine("JESTEM KIMŚ INNYM");
-}
-
-if (name == "Adam" || age < 50)
-{
-    Console.WriteLine("JESTEM ADAMEM lub JESTEM PRZED 50");
-}
-else
-{
-    Console.WriteLine("JESTEM TUTAJ W LINI 37");
-}
-
-bool isTrue = true;
-Console.WriteLine(isTrue);
-isTrue = !isTrue;
-Console.WriteLine(isTrue);
-
-if (age > 50)
-{
-    if(name == "Adam")
-    {
-        Console.WriteLine("Jestem Adamem i mam więcej niż 50 lat");
-    }
-    else
-    {
-        Console.WriteLine("Więcej niż 50 lat");
-    }
-    
-}
-else if (age > 40)
-{
-    Console.WriteLine("Więcej niż 40 lat");
-}
-else if (age > 30)
-{
-    Console.WriteLine("Więcej niż 30 lat");
-}
-else
-{
-    Console.WriteLine("Więcej niż 20 lat");
+    Console.WriteLine("Niepełnoletni mężczyzna"); 
 }

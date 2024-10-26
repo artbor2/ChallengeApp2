@@ -1,37 +1,48 @@
-﻿/*
- * Napisz w Program.cs kod, w którym:
- * - zdeklarujesz zmienną z imieniem
- * - zdeklarujesz zmienną z płcią (dobierz odpowiednią)
- * - zdeklarujesz z mienną z wiekiem
- *  
- * A następnie napisz kilka instrukcji warunkowych,
- * które przeanalizują te dane w następujący sposób:
- *  
- * (1): jeśli mamy do czynienia z kobietą i ma ona poniżej 30 lat, to zwróć komunikat:
- *      "Kobieta poniżej 30 lat"
- * (2): jesli mamy do czynienia z osobą o imiemiu Ewa i ma ona równo 30 lat, to zwróć komunikat:
- *      "Ewa, lat 30"
- * (3): jeśli mamy do czynienia z mężczyzną i ma poniżej 18 lat zwróć komunikat:
- *      "Niepenołetni mężczyzna"
- * (4): jeśli dane nie spełniają żadnego z wzarunków program nie zwraca nic
- *  
- * UWAGA:
- * Twój program zawsze powinien zwracać TYLKO JEDEN KOMUNIKAT lub w przypadku (4) nic!
+﻿int[] grades = new int[3];
+
+string[] daysOfWeek = new string[7];
+daysOfWeek[0] = "Poniedziałek";
+daysOfWeek[1] = "Wtorek";
+daysOfWeek[2] = "Środa";
+daysOfWeek[3] = "Czwartek";
+daysOfWeek[4] = "Piatek";
+daysOfWeek[5] = "Sobota";
+daysOfWeek[6] = "Niedziela";
+Console.WriteLine(daysOfWeek[2]);
+
+string[] daysOfWeek2 = {
+    "Poniedziałek", "Wtorek", "Środa",
+    "Czwartek", "Piątek","Sobota",
+    "Niedziela"
+};
+Console.WriteLine(daysOfWeek2[0]);
+Console.WriteLine();
+
+/*
+ * Index was outside the bounds of the array 
+ * 
+ * Console.WriteLine(daysOfWeek2[-1]);
+ * Console.WriteLine(daysOfWeek2[10]);
  */
 
-string name = "Ewa";
-bool male = false;
-int age = 30;
 
-if (male == false && age < 30)
+for (int i = 0; i < 10; i = i + 1)
 {
-    Console.WriteLine("Kobieta, poniżej 30 lat");
+    Console.Write(i + " ");
 }
-else if(name == "Ewa" && age == 30)
+Console.WriteLine();
+
+
+for (int i = 0; i < 10; i++)
 {
-    Console.WriteLine("Ewa, lat 30");
+    Console.Write(i + " ");
 }
-else if (male == true && age < 18)
+Console.WriteLine('\n');
+
+
+
+for(int i = 0; i < daysOfWeek.Length; i++)
 {
-    Console.WriteLine("Niepełnoletni mężczyzna"); 
+    Console.WriteLine(daysOfWeek[i]);
 }
+

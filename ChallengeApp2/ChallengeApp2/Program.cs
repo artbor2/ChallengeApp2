@@ -1,19 +1,9 @@
-﻿using ChallengeApp2;
-
-User user1 = new User("Adam", "356647477");
-User user2 = new User("Monika", "465437848");
-User user3 = new User("Zuzia", "47367367");
-User user4 = new User("Damian", "duddfcfs");
-
-string login = user1.Login;
-string password = user1.Password;
-user1.AddScore(5);
-user1.AddScore(2);
-user1.AddScore(1);
-
-int result = user1.Result;
-Console.WriteLine(result);
-Console.WriteLine(User.GameName);
-var pi = Math.PI;
-Console.WriteLine(pi);
-Console.WriteLine(User.count); 
+﻿ /// 1. Stwórz klasę Employee, w której przechowasz imi nazwisko,
+ /// wiek oraz punkty pracownika w postacoi liczb całkowitych.
+ /// 
+ /// 2. Stwórz 3 pracowników i każdemu przydziel po 5 ocen
+ /// z zakresu od 1 do 10.
+ /// 
+ /// 3. Napisz program, który wyszuka pracownika z najwyższą liczbą
+ /// ocen a następnie wyswietli jego dane oraz wynik
+ ///
